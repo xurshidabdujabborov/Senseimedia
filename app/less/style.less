@@ -1,0 +1,97 @@
+@import "./params/mix";
+@import "./header.less";
+@import "./main.less";
+@import "./Sigin.less";
+@import "./say.less";
+@import "./footer.less";
+
+body {
+  font-family: 'Manrope', sans-serif;
+  background: rgba(247, 246, 255, 1);
+  .scrollToTop-btn {
+    z-index: 999;
+    position: fixed;
+    background: linear-gradient(115.11deg, #9021AC 16.38%, #C8459F 84.56%);
+    color: #fff;
+    width: 45px;
+    height: 45px;
+    right: 100px; 
+    bottom: 30px;
+    font-size: 22px;
+    text-align: center;
+    line-height: 45px;
+    border-radius: 3px;
+    cursor: pointer;
+    opacity: 0;
+    transition: all .3s ease;
+  }
+  
+  .scrollToTop-btn.active {
+    right: 20px;
+    opacity: 1;
+  }
+  
+  .reveal {
+    position: relative;
+    transform: translateY(50px);
+    opacity: 0;
+    transition: all 1.3s ease
+  }
+  
+  .reveal.active {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+html{
+  scroll-behavior: smooth;
+}
+
+button.BgBlue {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 26px;
+  padding: 14px 40px;
+  color: white;
+  background: linear-gradient(115.11deg, #9021AC 16.38%, #C8459F 84.56%);
+  border-radius: 9px;
+  border: none;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+p.text {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  color: #333;
+  .sm-block({
+    font-size: 12px;
+    line-height: 20px;
+  })
+}
+h2.title{
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 48px;
+  color: black;
+  .md-block({
+    font-size: 25px;
+    line-height: 30px;
+  });
+  .sm-block({
+    font-size: 15px;
+    line-height: 20px;
+  })
+}
+.activeBars {
+  display: none;
+  .md(display , block);
+}
+
+.activeMenuBars {
+  display: block;
+  .md(display , none);
+}

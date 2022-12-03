@@ -1,0 +1,177 @@
+header {
+    width: 100%;
+
+    nav {
+        position: fixed;
+        width: 100%;
+        z-index: 999;
+        padding: 30px 0px;
+        background: #FFFFFF;
+        box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.08);
+
+        .img {
+            text-align: left;
+            img {
+                width: 100%;
+                .sm-block({
+                    width: 150px;
+                })
+            }
+        }
+
+        ul {
+            display: flex;
+            justify-content: right;
+            align-items: center;
+            .md-block({
+                width: 100%;
+                flex-direction: column;
+                margin-top: 20px;
+            });
+
+            li {
+                margin: 0px 30px;
+                .md-block({
+                    width: 100%;
+                    margin: 10px 0px;
+                });
+
+                a {
+                    font-size: 16px;
+                    font-weight: 500;
+                    line-height: 24px;
+                    color: #333;
+
+                    &:hover {
+                        cursor: pointer;
+                        transition: 1s;
+                        color: #9021AC;
+                    }
+                }
+            }
+            button.BgBlue{
+                .md-block({
+                    width: 100%;
+                    border-radius: 0px;
+                })
+            }
+        }
+        .bars {
+            margin-left: 600%;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+            border: 2px solid black;
+            &:hover {
+              cursor: pointer;
+              color: #9021AC;
+              border: 2px solid #9021AC;
+            }
+            .fa {
+              font-size: 16px;
+            }
+        }
+    }
+
+    .headerTitle {
+        width: 100%;
+        padding-top: 200px;
+        padding-bottom: 90px;
+
+        .left {
+            text-align: left;
+
+            h1 {
+                font-size: 45px;
+                font-weight: 800;
+                line-height: 65px;
+                color: black;
+                margin-bottom: 15px;
+                .md-block({
+                    font-size: 25px;
+                    line-height: 30px;
+                });
+
+                span {
+                    font-size: 55px;
+                    font-weight: 500;
+                    line-height: 65px;
+                    color: black;
+                    .md-block({
+                        font-size: 25px;
+                        line-height: 30px;
+                    });
+                }
+            }
+
+            .flex {
+                margin-top: 30px;
+                display: flex;
+                align-items: center;
+
+                button {
+                    font-size: 16px;
+                    font-weight: 600;
+                    line-height: 24px;
+                    color: white;
+                    padding: 14px 30px;
+                    background: #77B2D3;
+                    border-radius: 250px;
+                    border: none;
+                    margin: 0px 10px;
+                    .md-block({
+                        font-size: 10px;
+                        padding: 10px 15px;
+                    });
+
+                    &:hover {
+                        cursor: pointer;
+                        background: linear-gradient(115.11deg, #9021AC 16.38%, #C8459F 84.56%);
+                    }
+                }
+            }
+        }
+
+        img {
+            width: 100%;
+            .md-block({
+                margin-top: 50px;
+            })
+        }
+    }
+
+    .center {
+        width: 60%;
+        padding: 50px 40px;
+        margin: auto;
+        background: #FFFFFF;
+        box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.08);
+        border-radius: 20px;
+
+        .card {
+            margin-top: 35px;
+            text-align: left;
+            border-right: 1px solid rgba(199, 199, 199, 1);
+
+            h1 {
+                font-size: 30px;
+                font-weight: 800;
+                line-height: 48px;
+                color: #9021AC;
+            }
+        }
+        .card1 {
+            margin-top: 35px;
+            text-align: left;
+            h1 {
+                font-size: 30px;
+                font-weight: 800;
+                line-height: 48px;
+                color: #9021AC;
+            }
+        }
+    }
+}
